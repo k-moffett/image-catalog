@@ -1,25 +1,12 @@
 {
   "name": "image-catalog",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
-  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/moffkr91/vue-boilerplate.git",
+  "author": "kmoffett <moffkr91@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "dev": "pm2 start ./server/server.js  --watch --name server && cd client && yarn run dev"
+  }
 }
+
